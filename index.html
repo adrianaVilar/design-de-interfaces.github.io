@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> table, th, td {border: 2px solid black;} </style>
+    <title>Design de interfaces</title>
+  </head>
+  <body>
+    <header>
+      <h1>Título utilizando a tag h1</h1>
+      <p>
+        Lorem ipsum dolor sit amet <b>consectetur adipisicing</b> elit<b>.</b>
+        Harum, <i>assumenda</i> quis<b>?</b> Nobis autem<b>,</b> reiciendis
+        voluptas quis eos odit <b><i>reprehenderit</i></b> culpa ducimus
+        perferendis soluta pariatur<b>,</b> dolor enim
+        <i>repellat ratione</i> numquam ab<b>.</b>
+      </p>
+    </header>
+
+    <nav>
+      <ul>
+        <li>Menu</li>
+        <li>Principal</li>
+        <li>Produtos</li>
+        <li>Serviços</li>
+        <li>Sobre</li>
+      </ul>
+    </nav>
+
+    <main>
+      <a href="https://ifrs.edu.br/" target="_blank"><img src="img/img-ifrs.png" alt="logo do IF" width="569" height="110"></a>
+
+      <br>
+      <ol>
+        <li>
+          Frutas
+          <ul>
+            <li>Banana</li>
+            <li>Maçã</li>
+            <li>Abacate</li>
+          </ul>
+        </li>
+
+        <li>
+          Legumes
+          <ul>
+            <li>Cebola</li>
+            <li>Pimentão</li>
+          </ul>
+        </li>
+
+        <li>
+          Cereais
+          <ul>
+            <li>Arroz</li>
+            <li>Feijão</li>
+          </ul>
+        </li>
+      </ol>
+
+      <br>
+      <table>
+        <caption>
+          <b>Lucro por mês</b>
+        </caption>
+        <thead>
+          <tr>
+            <th rowspan="2">Mês</th>
+            <th colspan="2">Frutas</th>
+          </tr>
+          <tr>
+            <th>Banana</th>
+            <th>Maçã</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Janeiro</td>
+            <td>100</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Fevereiro</td>
+            <td>120</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Março</td>
+            <td>120</td>
+            <td>150</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td>340</td>
+            <td>300</td>
+          </tr>
+        </tfoot>
+      </table>
+      <br>
+
+      <form id="formulario-de-cadastro" method="post" action="recebe.php">
+        <fieldset>
+          <legend>Formulário de cadastro: </legend>
+            <label for="formulario-de-cadastro-nome">Nome completo:*</label>
+            <input type="text" id="formulario-de-cadastro-nome" placeholder="Nome completo" required><br>
+
+            <label for="formulario-de-cadastro-email">E-mail:*</label>
+            <input type="email" id="formulario-de-cadastro-email" placeholder="seu@email.aqui" required><br>
+
+            <label for="formulario-de-cadastro-telefone">Telefone:*</label>
+            <input type="tel" id="formulario-de-cadastro-telefone" placeholder="00-00000-0000" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required><br>
+
+            <label for="formulario-de-cadastro-nascimento">Data de nascimento:*</label>
+            <input type="date" id="formulario-de-cadastro-nascimento" required><br>
+
+            <label for="formulario-de-cadastro-senha">Senha:*</label>
+            <input type="password" id="formulario-de-cadastro-senha" placeholder="Senha" required><br>
+
+            <label for="formulario-de-cadastro-confirmacao-senha">Confirme sua senha:*</label>
+            <input type="password" id="formulario-de-cadastro-confirmacao-senha" placeholder="Confirme sua senha" required><br>
+            
+            <input type="checkbox" name="receber-newsletter" checked value="news">Aceito receber as novidades<br>
+            <input type="checkbox" name="aceite-das-condicoes" value="aceite">Declaro que li e aceito as condições de uso<br>
+
+            <input type="submit" value="Enviar"><br>
+        </fieldset>
+      </form>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/H2srMg3TkFE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      <figure>
+        <img src="img/img-tads.png" alt="logo do tads" width="420" height="144">
+        <figcaption>Logo do curso TADS do IFRS</figcaption>
+      </figure>
+
+    </main>
+    <footer>
+      Rua Engenheiro Tony Stark, 475. - Bairro Centro - Rio Grande/RS
+    </footer>
+  </body>
+</html>
